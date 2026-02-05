@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<style>
+  html {
+      box-sizing: border-box;
+  }
+  *, *:before, *:after {
+      box-sizing: inherit;
+  }
+
+  body {
+      font-family: "myriad-pro", "Arial", sans-serif;
+      margin: 0;
+      padding: 0;
+  }
+
+  /* Bottom banner styles */
+  .bottom-banner {
+      background: #222;
+      display: flex;
+      justify-content: center;
+      gap: 50px;
+      padding: 32px;
+      margin-top: 48px;
+  }
+
+  .social-link {
+      display: inline-block;
+      transition: transform 0.2s;
+  }
+  .social-link:hover {
+      transform: scale(1.15);
+  }
+
+  .social-icon {
+      width: 32px;
+      height: 32px;
+      vertical-align: middle;
+      margin: 0 4px;
+  }
+
+  .top-banner {
+      background: #ffcc00;
+      padding: 16px;
+  }
+
+  .hero-video {
+      width: 100%;
+  }
+
+  .main-text {
+      text-align: center;
+      margin: 0 auto;
+  }
+
+  .big-text {
+      font-size: 50px;
+      font-weight: 800;
+      background: linear-gradient(90deg, #ffe600 0%, #ffa600 100%);
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      letter-spacing: 2px;
+  }
+
+  .small-text {
+      font-size: 16px;
+      color: #444;
+      margin-bottom: 0;
+      line-height: 1.6;
+      font-weight: 400;
+  }
+
+</style>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Open Source Software Homepage</title>
+</head>
+<body>
+    <!-- Yellow banner with logo and text -->
+    <div class="top-banner">
+      <img src="media/logo.svg" alt="Logo" class="logo" />
+    </div>
+    <!-- Video section -->
+    <section class="video-section">
+        <video 
+            src="media/visual.mp4" 
+            autoplay 
+            muted 
+            loop 
+            playsinline 
+            class="hero-video"
+        ></video>
+    </section>
+    <!-- Big centered text -->
+    <section class="main-text">
+        <h1 class="big-text">Turck Public Repositories</h1>
+        <p class="small-text">Your Global Automation Partner.</p>
+    </section>
+        <!-- Bottom banner with social links -->
+        <div class="bottom-banner">
+            <a href="https://github.com/TurckPublicRepos/" target="_blank" class="social-link" title="GitHub">
+                <img src="media/Github.svg" alt="GitHub" class="social-icon" />
+            </a>
+            <a href="https://www.linkedin.com/company/turck/" target="_blank" class="social-link" title="LinkedIn">
+                <img src="media/LinkedIn.svg" alt="LinkedIn" class="social-icon" />
+            </a>
+            <a href="https://www.turck.com/" target="_blank" class="social-link" title="Website">
+                <img src="media/Site.svg" alt="Website" class="social-icon" />
+            </a>
+        </div>
+</body>
+</html>
